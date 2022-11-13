@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "影深",
+    "description": "Text Reader",
+    "version": "0.0.3",
+	"permissions":
+	[],
+	"content_scripts": 
+	[
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content-script.js"],
+			"run_at": "document_idle"
+		}
+	],
+	"web_accessible_resources": ["inject.js"],
+	"homepage_url": "https://小众软件.网站/",
+	"icons":
+	{
+		"24": "images/icon24.png",
+		"64": "images/icon64.png"
+	}
+}
